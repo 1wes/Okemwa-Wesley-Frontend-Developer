@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import './paginate.css';
 
 const PageNumbers=({paginate, capsulesPerPage, totalCapsules})=>{
+
+    const [active, setActive]=useState(false);
 
     const pageNumber=[];
 
@@ -9,10 +11,19 @@ const PageNumbers=({paginate, capsulesPerPage, totalCapsules})=>{
         pageNumber.push(number);
     }
 
+    // if(active){
+    //     let elements=document.getElementsByClassName("page-number");
+
+    //     for(let i=0; i<elements.length;i++){
+    //         elements[i].classList.add("active")
+    //     }
+    // }
+
     const displayedNumber=pageNumber.map((number)=>{
 
         return (
-            <li key={number} onClick={()=>paginate(number)} className="page-number"> 
+            <li key={number} onClick={()=>{paginate(number)
+            setActive(true)}} className="page-number"> 
                 {number}
             </li>
         )
