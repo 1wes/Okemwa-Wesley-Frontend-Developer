@@ -16,4 +16,13 @@
 .nav-menu img{
     width: 20%;
     height: auto;
+    margin-left: -30px;
+}
+
+@media only screen and (max-width:480px){
+
+    .nav-menu img{
+        width: 50%;
+        margin-left: -30px;
+    }
 }
