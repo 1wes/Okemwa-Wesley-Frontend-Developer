@@ -4,6 +4,7 @@
     color: gray;
     padding: 10px;
     border-radius: 5px;
+    position: relative;
 }
 
 .name{
@@ -26,7 +27,50 @@
     color: brown;
 }
 
+.additional-data span{
+    color: black;
+}
+
 .description{
     line-height: 25px;
     color: black;
+}
+
+.item-pop-up{
+    position: absolute;
+    background-color: red;
+    top: 0;
+    width: 90%;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    left: 0;
+    top: 5%;
+    z-index: 2000;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+    transition: all ease 1s;
+}
+
+.more-items{
+    display: block;
+}
+
+.additional-data{
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    gap: 10px;
+}
+
+.close{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.close-popoup{
+    display: none;
 }
