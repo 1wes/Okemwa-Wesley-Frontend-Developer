@@ -1,0 +1,26 @@
+.page-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-number{
+    color: whitesmoke;
+    font-weight: bold;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    box-shadow: rgba(255, 255, 255, 0.31) 0px 2px 29px 0px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
