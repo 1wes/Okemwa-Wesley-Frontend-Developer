@@ -1,5 +1,5 @@
 .banner{
-    height: 100%;
+    height: 100vh;
     display: flex;
     gap: 20px;
     margin: 0 auto;
@@ -42,6 +42,7 @@
     .banner{
         width: 90%;
         flex-direction: column;
+        height: 100%;
     }
 
     .hero-tagline, .hero-image{
